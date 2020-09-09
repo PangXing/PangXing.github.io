@@ -1,48 +1,31 @@
-# Setup
+# Site settings
 title: Pang Xing
-url: https://pangxing.github.io/
-paginate: 1
-baseurl: ""
-permalink: pretty
+description: 一个后端程序猿
+favicon: /assets/img/logo.jpg
+baseurl:
+url: https://pangxing.github.io
+rss_url:
 
-# Gems
-plugins:
-  - jekyll-gist
-  - jekyll-paginate
-  - jekyll-seo-tag
+# Build settings
 
-# Optimize Jekyll
-exclude:
-  - .editorconfig
-  - .git
-  - .jekyll-cache
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE.md
-  - README.md
+highlight: true
+#highlighter: rouge
 
-sass:
-  sass_dir: _sass
-  style: :compressed
+timezone: Asia/Shanghai
 
-# Options
+markdown: kramdown
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 
-# Replace this value and uncomment to enable Google Analytics tracking
-# ga_analytics: UA-000000-0
-
-# Specify the author for blog posts
-author:
-  name: Pang Xing
-  url: https://pangxing.github.io/
-  email: pangxing_2006@126.com
-
-# Custom vars
-version: 3.0.0
-
-# Navbar page list
-nav:
-  - title: Blog
-    url: /archive
-
-  - title: About
-    url: /about
+  coderay:
+    coderay_wrap: div
+    coderay_line_numbers: inline
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: style

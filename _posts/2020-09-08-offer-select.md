@@ -1,7 +1,9 @@
 ---
-layout: post
-title:  "2020年更换工作与思考"
-date:   2020-09-08 18:30:34 +0800
+layout: post_layout
+title:  2020年更换工作与思考
+time:   2020年09月09日 星期三
+location: 北京
+pulished: true
 ---
 
 
