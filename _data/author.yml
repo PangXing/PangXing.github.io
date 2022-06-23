@@ -10,40 +10,24 @@ workHistory:
 - work3:
   company: 京东
   location: 中国, 北京
-  title: 资深研发工程师
-  started: 2020
-  duration: (2016.9 - Present)
-  description: 搜索平台部
 
 - work2: 
   company: 小赢科技 
   location: 中国，北京
-  title: 高级研发工程师
-  started: 2016
-  duration: (2016.5 - 2020.9)
-  description: 风控引擎
 
 - work1:
   company: Cadence
   location: 中国, 北京
-  title: 研发工程师
-  started: 2014
-  duration: (2014.3 - 2016.5)
-  description: Linux下C++开发与调优
 
 educationHistory:
 - education2:
   organization: 北京航空航天大学
   degree: 硕士
   major: 软件工程
-  started: 2011
-  duration: (2011.9 - 2014.3)
 - education1:
   organization: 郑州航空工业管理学院
   degree: 学士
   major: 计算机科学与计算
-  started: 2006
-  duration: (2006.9 - 2010.6)
 languages:
 - language1:
   name: 中文
@@ -51,13 +35,13 @@ languages:
 - language2:
   name: English
   proficiency: Native
-programmingSkills:
+Programming languages at work:
+- Golang:
+  name: Golang
+  percentage: 50%
 - CPP:
   name: C/C++
-  percentage: 90%
+  percentage: 3%
 - Python:
   name: Python
-  percentage: 90%
-- Bash:
-  name: Bash Shell
-  percentage: 70%
+  percentage: 20%
