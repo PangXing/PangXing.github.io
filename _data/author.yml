@@ -28,20 +28,3 @@ educationHistory:
   organization: 郑州航空工业管理学院
   degree: 学士
   major: 计算机科学与计算
-languages:
-- language1:
-  name: 中文
-  proficiency: Native
-- language2:
-  name: English
-  proficiency: Native
-Programming languages at work:
-- Golang:
-  name: Golang
-  percentage: 50%
-- CPP:
-  name: C/C++
-  percentage: 3%
-- Python:
-  name: Python
-  percentage: 20%
