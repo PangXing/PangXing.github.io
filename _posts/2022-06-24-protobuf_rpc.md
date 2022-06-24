@@ -10,7 +10,7 @@ pulished: true
 
 ## 1.Google Protobuf RPC 的原始框架提供了哪些器件？
 &ensp;&ensp;&ensp;&ensp;通过一个经典的echo实例进行说明Google Protobuf 如何定义一个RPC服务，以及Protobuf RPC原始框架提供了哪些基础器件？
-
+![](/assets/img/protobuf_rpc/echo_pb.png)
 <img src="/assets/img/protobuf_rpc/echo_pb.png" width=60% alt="/assets/img/protobuf_rpc/echo_pb.png" align=center />
 
 &ensp;&ensp;&ensp;&ensp;在.proto文件定义RPC服务接口EchoServer，并通过protoc工具根据你需要的语言版本，分别生成了服务端Service接口EchoServer与客户端存根接口EchoServer_Stub。其中客户端中的通信是调用了RpcChannel接口实现，而服务端与客户端交互过程又引入了RpcController接口进行干预。由此总结一下Protobuf RPC 原始框架定义的这些基础器件：<br>
