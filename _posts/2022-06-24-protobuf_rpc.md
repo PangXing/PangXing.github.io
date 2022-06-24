@@ -1,7 +1,7 @@
 ---
 layout: post_layout
 title:  Protobuf RPC的原生服务框架
-time:   2022年06月24日 星期四
+time:   2022年06月24日 星期五
 location: 北京
 pulished: true
 ---
@@ -10,8 +10,8 @@ pulished: true
 
 ## 1.Google Protobuf RPC 的原始框架提供了哪些器件？
 &ensp;&ensp;&ensp;&ensp;通过一个经典的echo实例进行说明Google Protobuf 如何定义一个RPC服务，以及Protobuf RPC原始框架提供了哪些基础器件？
-![](/assets/img/protobuf_rpc/echo_pb.png)
-<img src="/assets/img/protobuf_rpc/echo_pb.png" width=60% alt="/assets/img/protobuf_rpc/echo_pb.png" align=center />
+
+![/assets/img/protobuf_rpc/echo_pb.png](/assets/img/protobuf_rpc/echo_pb.png){:height="100%" width="100%"}
 
 &ensp;&ensp;&ensp;&ensp;在.proto文件定义RPC服务接口EchoServer，并通过protoc工具根据你需要的语言版本，分别生成了服务端Service接口EchoServer与客户端存根接口EchoServer_Stub。其中客户端中的通信是调用了RpcChannel接口实现，而服务端与客户端交互过程又引入了RpcController接口进行干预。由此总结一下Protobuf RPC 原始框架定义的这些基础器件：<br>
 + Serveric
@@ -38,7 +38,7 @@ pulished: true
 
 ## 2.基于Protobuf RPC的可运行的RPC框架需要做些什么？
 
-<img src="/assets/img/protobuf_rpc/pb_rpc.png" width=60% alt="/assets/img/protobuf_rpc/pb_rpc.png" align=center />
+![/assets/img/protobuf_rpc/pb_rpc.png](/assets/img/protobuf_rpc/pb_rpc.png){:height="100%" width="100%"}
 
 &ensp;&ensp;&ensp;&ensp;通过上面的分析，我们知道了Protobuf RPC 原生框架只是提供了一个运行框架，涵盖了Service、RpcChannel、RPCcontroller抽象接口，需要开发者进行二次开发实现RPCChannelImpl、RPCControllerImpl与服务侧的callback函数注册，主要功能包括：
   - 数据的序列化与反序列化，可使用Protobuf 或 Json等；
@@ -47,7 +47,7 @@ pulished: true
 
 ## 3. 可运行的RPC框架如何实现？
 
-<img src="/assets/img/protobuf_rpc/simple_rpc.png" width=60% alt="/assets/img/protobuf_rpc/simple_rpc.png" align=center />
+![/assets/img/protobuf_rpc/simple_rpc.png](/assets/img/protobuf_rpc/simple_rpc.png){:height="100%" width="100%"}
 
   - RpcServerImpl 服务端服务管理类，包括了Service的注册函数RegisterService、response数据序列化与传输函数OnCallbackDone（注册回调） 与 服务监听与Service映射函数Start；
   - RPCChannel 客户端管道类，实现了CallMethod函数，其功能包括请求数据序列化，请求方法的编码与接收数据反序列化；
